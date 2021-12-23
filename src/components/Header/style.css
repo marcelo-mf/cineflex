@@ -1,15 +1,17 @@
 .header {
-    height: 67px;
+    height: 80px;
     width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-color: #C3CFD9;
+    background-color: white;
 
     font-size: 34px;
     font-family: "Roboto";
-    font-weight: 400;
+    font-weight: 800;
     color: #E8833A;
+
+    filter: drop-shadow(0 0 2rem #c3cfd9);
 }

@@ -1,0 +1,12 @@
+.movie img{
+    height: 250px;
+    width: 160px;
+
+    margin: 10px;
+
+    border-radius: 7px;
+}
+
+.movie img:hover {
+    cursor: pointer;
+}
