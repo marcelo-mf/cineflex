@@ -1,0 +1,69 @@
+.days-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 50px;
+}
+
+.data-hora {
+    margin-bottom: 15px;
+    margin-top: 30px;
+
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.lista-horarios h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+
+    font-size: 24px;
+    color: black;
+
+    font-family: "Roboto";
+    font-weight: 500;
+
+    width: 100%;
+    height: 80px;
+
+    margin-bottom: -20px;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: row;
+}
+
+.hora {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    height: 30px;
+    width: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #E8833A;
+    border-radius: 6px;
+
+    font-family: "Roboto";
+    font-weight: 500;
+    color: white;
+
+    filter: drop-shadow(0 0 0.2rem rgba(128, 128, 128, 0.534));
+}
+
+.hora:hover {
+    cursor: pointer;
+}
+
+

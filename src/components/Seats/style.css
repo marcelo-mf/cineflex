@@ -1,0 +1,58 @@
+.sessao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    
+        font-size: 24px;
+        color: black;
+    
+        font-family: "Roboto";
+        font-weight: 500;
+    
+        width: 100%;
+        height: 110px;
+}
+
+.selecionar-assento {
+    height: 200px;
+    width: 370px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.assento {
+    height: 27px;
+    width: 27px;
+
+    background-color: white;
+
+    margin: 5px;
+
+    filter: drop-shadow(0 0 0.1rem rgba(128, 128, 128, 0.295));
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 500;
+
+    
+}
+
+.assento:hover {
+    cursor: pointer;
+}

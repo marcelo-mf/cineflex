@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
 
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.900);
 
     font-size: 34px;
     font-family: "Roboto";
@@ -14,4 +14,9 @@
     color: #E8833A;
 
     filter: drop-shadow(0 0 2rem #c3cfd9);
+
+    position: sticky;
+    top: 0px;
+
+    z-index: 2000;
 }

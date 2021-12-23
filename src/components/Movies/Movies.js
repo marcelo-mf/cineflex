@@ -3,6 +3,7 @@ import "./style.css"
 import Movie from "./Movie"
 import { useEffect, useState } from "react"
 import axios from "axios"
+import Showtimes from "../Showtimes/Showtimes";
 
 export default function Movies() {
 
