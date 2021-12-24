@@ -1,5 +1,5 @@
 import Dates from "./Dates";
-import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 import "./style.css"
 
@@ -21,6 +21,8 @@ export default function Showtimes() {
         return <h1>Carregando...</h1>
     }
 
+    console.log(horarios);
+
     return(
         <div className="lista-horarios">
             <h2>Selecione o horário</h2>
@@ -29,7 +31,9 @@ export default function Showtimes() {
                     horarios.days.map(d => <Dates key={d.id} {...d}/>)
                 }
             </div>
-            
+            <Footer titulo={horarios.title} imagem={horarios.posterURL}/>
         </div>
     )
+
+    
 }

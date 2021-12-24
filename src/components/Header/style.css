@@ -6,17 +6,24 @@
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(255, 255, 255, 0.900);
+    background-color: rgba(255, 255, 255, 0.800);
 
+    
+
+    filter: drop-shadow(0 0 0.5rem #c3cfd9);
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    z-index: 2000;
+}
+
+.header .logo {
     font-size: 34px;
     font-family: "Roboto";
     font-weight: 800;
     color: #E8833A;
 
-    filter: drop-shadow(0 0 2rem #c3cfd9);
-
-    position: sticky;
-    top: 0px;
-
-    z-index: 2000;
+    cursor: pointer;
 }

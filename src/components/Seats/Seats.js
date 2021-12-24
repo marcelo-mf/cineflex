@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
+import Legend from "./Legend";
+import Footer from "../Footer/Footer";
+
 import "./style.css"
 
 export default function Seats() {
@@ -20,12 +23,14 @@ export default function Seats() {
 
     return(
         <div className="sessao">
-            <h2>Selecione o assento</h2>
+            <h2>Selecione o(s) assento(s)</h2>
             <div className="selecionar-assento">
                 {
                     sessao.seats.map(seat => <div key={seat.id} className="assento">{seat.name}</div>)
                 }
             </div>
+            <Legend />
+            <Footer imagem={sessao.movie.posterURL} titulo={sessao.movie.title} name={sessao.name} weekday={sessao.day.weekday} tracin="-"/>
         </div>
     )
 }

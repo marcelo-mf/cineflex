@@ -1,0 +1,60 @@
+.footer{
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    filter: drop-shadow(0 -0.5mm 3mm #c3cfd9a1);
+
+    background-color: rgb(255, 255, 255);
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 400px;
+    height: 100px;
+}
+
+.texto-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    height: 60px;
+}
+
+.footer img {
+    height: 80px;
+
+    border-radius: 5px;
+
+    filter: drop-shadow(0 0 0.2rem rgba(128, 128, 128, 0.527));
+
+    margin-left: 10px;
+}
+
+.footer p {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 20px;
+
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.footer .p-hora {
+    font-weight: 300;
+}
+
