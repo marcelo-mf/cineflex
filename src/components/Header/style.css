@@ -6,11 +6,10 @@
     align-items: center;
     justify-content: center;
 
-    background-color: rgba(255, 255, 255, 0.800);
+    background-color: rgba(255, 255, 255, 0.781);
+    backdrop-filter: blur(5px);
 
-    
-
-    filter: drop-shadow(0 0 0.5rem #c3cfd9);
+    box-shadow:  0 0 1em #c3cfd9a8;
 
     position: fixed;
     top: 0px;

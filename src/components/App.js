@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { useState } from "react";
 import Header from "./Header/Header"
 import Movies from "./Movies/Movies"
 import Seats from "./Seats/Seats"
@@ -8,6 +8,8 @@ import Success from "./Sucesss/Success"
 
 
 export default function App() {
+
+    const [infoBooking, setInfoBooking] = useState();
     
     return (
         <BrowserRouter>
@@ -15,8 +17,8 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Movies />} />
                 <Route path="/showtimes/:idFilme" element={<Showtimes />} />
-                <Route path="/seats/:idSessao" element={<Seats />} />
-                <Route path="/success" element={<Success />} />
+                <Route path="/seats/:idSessao" element={<Seats setInfoBooking={setInfoBooking}/>} />
+                <Route path="/success" element={<Success {...infoBooking} setInfoBooking={setInfoBooking}/>} />
             </Routes>
         </BrowserRouter>
     );

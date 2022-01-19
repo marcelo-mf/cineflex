@@ -1,6 +1,6 @@
 import Dates from "./Dates";
 import Footer from "../Footer/Footer";
-
+import Loading from "../Loading/Loading";
 import "./style.css"
 
 import axios from "axios";
@@ -15,13 +15,11 @@ export default function Showtimes() {
     useEffect(() => {
         const promise = axios.get(`https://mock-api.driven.com.br/api/v4/cineflex/movies/${idFilme}/showtimes`);
         promise.then(resposta => setHorarios(resposta.data))
-    }, []); 
+    }, [idFilme]); 
 
     if(horarios === null) {
-        return <h1>Carregando...</h1>
+        return <Loading />
     }
-
-    console.log(horarios);
 
     return(
         <div className="lista-horarios">

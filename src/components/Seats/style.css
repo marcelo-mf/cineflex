@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    margin-bottom: 150px;
 }
 
 .sessao h2 {
@@ -96,3 +98,77 @@
     justify-content: center;
     align-items: center;
 }
+
+.inputs-comprador {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 330px;
+    height: 200px;
+
+    margin-top: 30px;
+}
+
+.inputs-comprador label{
+    font-family: "Roboto";
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.inputs-comprador input {
+    margin-bottom: 30px;
+
+    width: 100%;
+    height: 40px;
+
+    border: solid 1px rgba(185, 185, 185, 0.103);
+    border-radius: 6px;
+
+    background-color: rgba(199, 199, 199, 0.151);
+
+    padding-left: 5px;
+
+    outline: none;
+
+    transition: 0.15s;
+
+    box-sizing: border-box;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    padding-left: 5px;
+
+    color: rgba(128, 128, 128, 0.76);
+}
+
+.inputs-comprador input:focus {
+    border: solid 2px rgba(128, 128, 128, 0.226);
+}
+
+.sessao button {
+    width: 330px;
+    height: 40px;
+
+    background-color: #E8833A;
+    filter: drop-shadow(0 0 0.2rem rgba(128, 128, 128, 0.342));
+
+    font-family: "Roboto";
+    font-weight: 500;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+}
+
+.sessao button:hover {
+    cursor: pointer;
+}
+
+
+
+
+  
+
